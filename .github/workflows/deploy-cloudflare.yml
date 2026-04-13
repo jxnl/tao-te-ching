@@ -37,4 +37,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          command: pages deploy dist --project-name=book-of-disquiet --branch=main
+          command: pages deploy dist --project-name=tao-te-ching --branch=main

@@ -29,6 +29,7 @@ pnpm cf:dev
 
 - Pages project: `tao-te-ching`
 - D1 database: `tao-te-ching`
+- Live Pages URL: `https://tao-te-ching-2w5.pages.dev`
 - Update `wrangler.toml` with the real D1 IDs after running:
 
 ```bash
