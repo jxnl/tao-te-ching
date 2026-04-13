@@ -83,6 +83,9 @@ function extractChapters(pageHtml) {
   for (const match of body.matchAll(chapterPattern)) {
     const chapterNumber = Number(match[1])
     const rawBody = normalizeText(match[2])
+      .replace(/\nTHE END[\s\S]*$/i, "")
+      .replace(/\nTable of Contents[\s\S]*$/i, "")
+      .trim()
     const blocks = rawBody
       .split(/\n\s*\n/)
       .map(formatBlock)

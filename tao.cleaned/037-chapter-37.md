@@ -16,15 +16,3 @@ source_url: "https://classics.mit.edu/Lao/taote.1.1.html"
 > Is free from all external aim.
 > With no desire, at rest and still,
 > All things go right as of their will.
-
-> Table of Contents
-> Home
-
-> Browse and
-> Comment
-> Search
-
-> Buy Books and
-> CD-ROMs
-> Help
-> &copy; 1994-2009

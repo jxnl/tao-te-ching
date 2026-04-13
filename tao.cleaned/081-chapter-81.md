@@ -10,17 +10,4 @@ source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
 
 2. The sage does not accumulate (for himself). The more that he expends for others, the more does he possess of his own; the more that he gives to others, the more does he have himself.
 
-> 3. With all the sharpness of the Way of Heaven, it injures not; with all the doing in the way of the sage he does not strive.
-> THE END
-
-> Table of Contents
-> Home
-
-> Browse and
-> Comment
-> Search
-
-> Buy Books and
-> CD-ROMs
-> Help
-> &copy; 1994-2009
+3. With all the sharpness of the Way of Heaven, it injures not; with all the doing in the way of the sage he does not strive.
