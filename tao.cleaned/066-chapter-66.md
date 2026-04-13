@@ -1,0 +1,13 @@
+---
+title: "Chapter 66"
+chapter_label: "66"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. That whereby the rivers and seas are able to receive the homage and tribute of all the valley streams, is their skill in being lower than they;--it is thus that they are the kings of them all. So it is that the sage (ruler), wishing to be above men, puts himself by his words below them, and, wishing to be before them, places his person behind them.
+
+2. In this way though he has his place above them, men do not feel his weight, nor though he has his place before them, do they feel it an injury to them.
+
+3. Therefore all in the world delight to exalt him and do not weary of him. Because he does not strive, no one finds it possible to strive with him.

@@ -1,0 +1,18 @@
+name = "tao-te-ching"
+compatibility_date = "2026-04-12"
+pages_build_output_dir = "./dist"
+
+# Set this to the Cloudflare account that owns the existing Pages project.
+# Wrangler exposed these two accounts on this machine when inspected on April 12, 2026:
+# - 567 Studio: 7a3f8821775b581b574de68563bb657c
+# - Hamel.husain@gmail.com's Account: db346331d0d415459a23a16d9a614b94
+# Add the matching account_id here or export CLOUDFLARE_ACCOUNT_ID before remote commands.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tao-te-ching"
+database_id = "f718965f-6f94-4ba9-be6a-99acf0524940"
+preview_database_id = "f718965f-6f94-4ba9-be6a-99acf0524940"
+
+[vars]
+RATE_LIMIT_SALT = "tao-te-ching"

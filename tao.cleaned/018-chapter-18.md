@@ -1,0 +1,11 @@
+---
+title: "Chapter 18"
+chapter_label: "18"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.1.1.html"
+---
+
+1. When the Great Tao (Way or Method) ceased to be observed, benevolence and righteousness came into vogue. (Then) appeared wisdom and shrewdness, and there ensued great hypocrisy.
+
+2. When harmony no longer prevailed throughout the six kinships, filial sons found their manifestation; when the states and clans fell into disorder, loyal ministers appeared.

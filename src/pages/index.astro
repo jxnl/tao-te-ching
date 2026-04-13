@@ -1,0 +1,78 @@
+---
+import { icons, renderIcon } from "@/lib/icons"
+import BookLayout from "@/layouts/BookLayout.astro"
+import { getChapter, getChapterSlugs } from "@/lib/book"
+
+const slugs = getChapterSlugs()
+const firstChapter = getChapter(slugs[0])
+const firstChapterHref = `${Astro.url.pathname}read/${firstChapter.slug}/`
+const socialImage = `${import.meta.env.BASE_URL}og/index.png`
+const navLinkClass =
+  "font-book text-[0.98rem] tracking-[0.01em] text-[rgba(92,92,92,0.88)] no-underline transition-colors hover:text-ink focus-visible:text-ink focus-visible:outline-none"
+const navSearchClass =
+  "w-full border-0 bg-transparent px-0 py-0 font-book text-[0.98rem] tracking-[0.01em] text-[rgba(92,92,92,0.88)] outline-none transition-colors placeholder:text-[rgba(120,120,120,0.55)] focus:text-ink"
+---
+
+<BookLayout
+  title="Tao Te Ching"
+  description="A quiet reader for Laozi's Tao Te Ching, translated by James Legge."
+  socialImage={socialImage}
+  canonicalPath={Astro.url.pathname}
+>
+  <main class="mx-auto min-h-screen bg-white px-6 sm:px-10">
+    <section class="mx-auto max-w-[60ch] pt-24 sm:pt-32">
+      <p class="mb-14 font-book text-[1rem] tracking-[0.01em] text-ink">
+        Laozi
+      </p>
+
+      <h1 class="mb-12 font-book text-[2.2rem] font-normal leading-[1.05] tracking-[0.01em] text-ink sm:text-[2.6rem]">
+        Tao Te Ching
+      </h1>
+
+      <nav class="grid max-w-[10rem] gap-3" aria-label="Home navigation">
+        <a
+          id="start-random"
+          href={firstChapterHref}
+          class={navLinkClass}
+        >
+          read
+        </a>
+
+        <a
+          href={`${import.meta.env.BASE_URL}stars/`}
+          class={navLinkClass}
+        >
+          stars
+        </a>
+
+        <form id="search-form" class="w-full" autocomplete="off">
+          <label class="sr-only" for="search-query">Search chapters</label>
+          <div class="flex items-center gap-2">
+            <input
+              id="search-query"
+              name="q"
+              type="text"
+              inputmode="search"
+              enterkeyhint="search"
+              spellcheck="false"
+              autocapitalize="off"
+              placeholder="search"
+              class={`${navSearchClass} min-w-0 flex-1`}
+            />
+            <button
+              type="button"
+              data-search-clear
+              aria-label="Clear search"
+              class="hidden h-4 w-4 shrink-0 border-0 bg-transparent p-0 text-[rgba(92,92,92,0.52)] transition duration-200 ease-out hover:text-[rgba(62,62,62,0.82)] focus-visible:text-[rgba(62,62,62,0.82)] focus-visible:outline-none"
+            >
+              <span
+                aria-hidden="true"
+                set:html={renderIcon(icons.close, "h-4 w-4 stroke-[1.7]")}
+              />
+            </button>
+          </div>
+        </form>
+      </nav>
+    </section>
+  </main>
+</BookLayout>

@@ -1,0 +1,11 @@
+---
+title: "Chapter 43"
+chapter_label: "43"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice. I know hereby what advantage belongs to doing nothing (with a purpose).
+
+2. There are few in the world who attain to the teaching without words, and the advantage arising from non-action.

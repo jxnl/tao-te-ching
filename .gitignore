@@ -1,0 +1,11 @@
+.astro/
+dist/
+node_modules/
+output/
+.wrangler/
+.venv/
+.DS_Store
+book-of-d-826eb20.zip
+public/og/
+preview/og/
+.playwright-cli/

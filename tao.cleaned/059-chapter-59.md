@@ -1,0 +1,13 @@
+---
+title: "Chapter 59"
+chapter_label: "59"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. For regulating the human (in our constitution) and rendering the (proper) service to the heavenly, there is nothing like moderation.
+
+2. It is only by this moderation that there is effected an early return (to man's normal state). That early return is what I call the repeated accumulation of the attributes (of the Tao). With that repeated accumulation of those attributes, there comes the subjugation (of every obstacle to such return). Of this subjugation we know not what shall be the limit; and when one knows not what the limit shall be, he may be the ruler of a state.
+
+3. He who possesses the mother of the state may continue long. His case is like that (of the plant) of which we say that its roots are deep and its flower stalks firm:--this is the way to secure that its enduring life shall long be seen.

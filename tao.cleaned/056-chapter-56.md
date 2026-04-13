@@ -1,0 +1,13 @@
+---
+title: "Chapter 56"
+chapter_label: "56"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. He who knows (the Tao) does not (care to) speak (about it); he who is (ever ready to) speak about it does not know it.
+
+2. He (who knows it) will keep his mouth shut and close the portals (of his nostrils). He will blunt his sharp points and unravel the complications of things; he will attemper his brightness, and bring himself into agreement with the obscurity (of others). This is called 'the Mysterious Agreement.'
+
+3. (Such an one) cannot be treated familiarly or distantly; he is beyond all consideration of profit or injury; of nobility or meanness:--he is the noblest man under heaven.

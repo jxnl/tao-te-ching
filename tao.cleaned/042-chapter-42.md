@@ -1,0 +1,13 @@
+---
+title: "Chapter 42"
+chapter_label: "42"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. The Tao produced One; One produced Two; Two produced Three; Three produced All things. All things leave behind them the Obscurity (out of which they have come), and go forward to embrace the Brightness (into which they have emerged), while they are harmonised by the Breath of Vacancy.
+
+2. What men dislike is to be orphans, to have little virtue, to be as carriages without naves; and yet these are the designations which kings and princes use for themselves. So it is that some things are increased by being diminished, and others are diminished by being increased.
+
+3. What other men (thus) teach, I also teach. The violent and strong do not die their natural death. I will make this the basis of my teaching.

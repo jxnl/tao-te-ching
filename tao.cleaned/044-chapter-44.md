@@ -1,0 +1,28 @@
+---
+title: "Chapter 44"
+chapter_label: "44"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+> 1. Or fame or life,
+> Which do you hold more dear?
+> Or life or wealth,
+> To which would you adhere?
+> Keep life and lose those other things;
+> Keep them and lose your life:--which brings
+> Sorrow and pain more near?
+
+> 2. Thus we may see,
+> Who cleaves to fame
+> Rejects what is more great;
+> Who loves large stores
+> Gives up the richer state.
+
+> 3. Who is content
+> Needs fear no shame.
+> Who knows to stop
+> Incurs no blame.
+> From danger free
+> Long live shall he.

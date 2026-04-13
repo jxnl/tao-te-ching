@@ -1,0 +1,8 @@
+[project]
+name = "tao-te-ching"
+version = "0.1.0"
+description = "Astro reader and import workflow for the Tao Te Ching"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf>=1.27.2",
+]

@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #ffffff;
+    color: theme("colors.ink");
+    font-family: theme("fontFamily.book");
+  }
+
+  body {
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  ::selection {
+    background: rgba(120, 120, 120, 0.2);
+  }
+}
+
+@layer components {
+  @keyframes marginalia-enter {
+    from {
+      transform: translate3d(0, 0.24rem, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .book-page p {
+    margin: 0;
+    text-align: justify;
+    line-height: 1.7;
+    hyphens: auto;
+    text-wrap: pretty;
+  }
+
+  .book-page p + p {
+    margin-top: 0.2em;
+    text-indent: 1.5em;
+  }
+
+  .book-page blockquote {
+    margin: 2em 0;
+    border-left: 1px solid theme("colors.rule");
+    padding-left: 1.5em;
+    font-style: italic;
+  }
+
+  .book-page h2 {
+    margin: 2em 0 0.9em;
+    font-size: 1.12em;
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  .reader-shell {
+    --page-heat: 0;
+    background:
+      radial-gradient(
+        circle at top center,
+        rgba(120, 120, 120, calc(var(--page-heat) * 0.16)),
+        rgba(255, 255, 255, 0) 55%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(238, 238, 238, calc(var(--page-heat) * 0.95)) 0%,
+        #ffffff 22rem
+      );
+    transition: background 260ms ease-out;
+  }
+
+  .reader-star-button path {
+    fill: transparent;
+    stroke: currentColor;
+    transition: fill 140ms ease-out, stroke 140ms ease-out;
+  }
+
+  .reader-star-button[data-active="true"] {
+    color: rgba(74, 74, 74, 1);
+  }
+
+  .reader-star-button[data-active="true"] path {
+    fill: currentColor;
+  }
+
+  .book-highlight {
+    background-color: rgba(190, 190, 190, 0.42);
+    color: inherit;
+  }
+
+  .highlight-tooltip {
+    position: fixed;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    transform: translate(-50%, -105%) scale(0.98);
+    border: 0;
+    border-radius: 999px;
+    background: #111111;
+    justify-content: center;
+    padding: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 140ms ease-out,
+      transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 140ms ease-out;
+  }
+
+  .highlight-tooltip[data-visible="true"] {
+    transform: translate(-50%, -120%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .highlight-tooltip svg {
+    width: 0.74rem;
+    height: 0.74rem;
+    stroke-width: 2;
+  }
+
+  .highlight-tooltip-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .highlight-tooltip-action + .highlight-tooltip-action {
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .highlight-tooltip-action:hover,
+  .highlight-tooltip-action:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+  }
+
+  .highlight-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translateX(-50%) rotate(45deg);
+    background: #111111;
+  }
+
+  .highlight-tooltip:hover,
+  .highlight-tooltip:focus-visible {
+    background: #000000;
+    outline: none;
+  }
+
+  .highlight-tooltip:hover::after,
+  .highlight-tooltip:focus-visible::after {
+    background: #000000;
+  }
+}

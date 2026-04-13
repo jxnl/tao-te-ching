@@ -1,0 +1,731 @@
+[
+  {
+    "chapter": 1,
+    "slug": "001-chapter-1",
+    "title": "Chapter 1",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/001-chapter-1.md"
+  },
+  {
+    "chapter": 2,
+    "slug": "002-chapter-2",
+    "title": "Chapter 2",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/002-chapter-2.md"
+  },
+  {
+    "chapter": 3,
+    "slug": "003-chapter-3",
+    "title": "Chapter 3",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/003-chapter-3.md"
+  },
+  {
+    "chapter": 4,
+    "slug": "004-chapter-4",
+    "title": "Chapter 4",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/004-chapter-4.md"
+  },
+  {
+    "chapter": 5,
+    "slug": "005-chapter-5",
+    "title": "Chapter 5",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/005-chapter-5.md"
+  },
+  {
+    "chapter": 6,
+    "slug": "006-chapter-6",
+    "title": "Chapter 6",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/006-chapter-6.md"
+  },
+  {
+    "chapter": 7,
+    "slug": "007-chapter-7",
+    "title": "Chapter 7",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/007-chapter-7.md"
+  },
+  {
+    "chapter": 8,
+    "slug": "008-chapter-8",
+    "title": "Chapter 8",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/008-chapter-8.md"
+  },
+  {
+    "chapter": 9,
+    "slug": "009-chapter-9",
+    "title": "Chapter 9",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/009-chapter-9.md"
+  },
+  {
+    "chapter": 10,
+    "slug": "010-chapter-10",
+    "title": "Chapter 10",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/010-chapter-10.md"
+  },
+  {
+    "chapter": 11,
+    "slug": "011-chapter-11",
+    "title": "Chapter 11",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/011-chapter-11.md"
+  },
+  {
+    "chapter": 12,
+    "slug": "012-chapter-12",
+    "title": "Chapter 12",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/012-chapter-12.md"
+  },
+  {
+    "chapter": 13,
+    "slug": "013-chapter-13",
+    "title": "Chapter 13",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/013-chapter-13.md"
+  },
+  {
+    "chapter": 14,
+    "slug": "014-chapter-14",
+    "title": "Chapter 14",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/014-chapter-14.md"
+  },
+  {
+    "chapter": 15,
+    "slug": "015-chapter-15",
+    "title": "Chapter 15",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/015-chapter-15.md"
+  },
+  {
+    "chapter": 16,
+    "slug": "016-chapter-16",
+    "title": "Chapter 16",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/016-chapter-16.md"
+  },
+  {
+    "chapter": 17,
+    "slug": "017-chapter-17",
+    "title": "Chapter 17",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/017-chapter-17.md"
+  },
+  {
+    "chapter": 18,
+    "slug": "018-chapter-18",
+    "title": "Chapter 18",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/018-chapter-18.md"
+  },
+  {
+    "chapter": 19,
+    "slug": "019-chapter-19",
+    "title": "Chapter 19",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/019-chapter-19.md"
+  },
+  {
+    "chapter": 20,
+    "slug": "020-chapter-20",
+    "title": "Chapter 20",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/020-chapter-20.md"
+  },
+  {
+    "chapter": 21,
+    "slug": "021-chapter-21",
+    "title": "Chapter 21",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/021-chapter-21.md"
+  },
+  {
+    "chapter": 22,
+    "slug": "022-chapter-22",
+    "title": "Chapter 22",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/022-chapter-22.md"
+  },
+  {
+    "chapter": 23,
+    "slug": "023-chapter-23",
+    "title": "Chapter 23",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/023-chapter-23.md"
+  },
+  {
+    "chapter": 24,
+    "slug": "024-chapter-24",
+    "title": "Chapter 24",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/024-chapter-24.md"
+  },
+  {
+    "chapter": 25,
+    "slug": "025-chapter-25",
+    "title": "Chapter 25",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/025-chapter-25.md"
+  },
+  {
+    "chapter": 26,
+    "slug": "026-chapter-26",
+    "title": "Chapter 26",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/026-chapter-26.md"
+  },
+  {
+    "chapter": 27,
+    "slug": "027-chapter-27",
+    "title": "Chapter 27",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/027-chapter-27.md"
+  },
+  {
+    "chapter": 28,
+    "slug": "028-chapter-28",
+    "title": "Chapter 28",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/028-chapter-28.md"
+  },
+  {
+    "chapter": 29,
+    "slug": "029-chapter-29",
+    "title": "Chapter 29",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/029-chapter-29.md"
+  },
+  {
+    "chapter": 30,
+    "slug": "030-chapter-30",
+    "title": "Chapter 30",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/030-chapter-30.md"
+  },
+  {
+    "chapter": 31,
+    "slug": "031-chapter-31",
+    "title": "Chapter 31",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/031-chapter-31.md"
+  },
+  {
+    "chapter": 32,
+    "slug": "032-chapter-32",
+    "title": "Chapter 32",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/032-chapter-32.md"
+  },
+  {
+    "chapter": 33,
+    "slug": "033-chapter-33",
+    "title": "Chapter 33",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/033-chapter-33.md"
+  },
+  {
+    "chapter": 34,
+    "slug": "034-chapter-34",
+    "title": "Chapter 34",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/034-chapter-34.md"
+  },
+  {
+    "chapter": 35,
+    "slug": "035-chapter-35",
+    "title": "Chapter 35",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/035-chapter-35.md"
+  },
+  {
+    "chapter": 36,
+    "slug": "036-chapter-36",
+    "title": "Chapter 36",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/036-chapter-36.md"
+  },
+  {
+    "chapter": 37,
+    "slug": "037-chapter-37",
+    "title": "Chapter 37",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.1.1.html",
+    "target": "tao.cleaned/037-chapter-37.md"
+  },
+  {
+    "chapter": 38,
+    "slug": "038-chapter-38",
+    "title": "Chapter 38",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/038-chapter-38.md"
+  },
+  {
+    "chapter": 39,
+    "slug": "039-chapter-39",
+    "title": "Chapter 39",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/039-chapter-39.md"
+  },
+  {
+    "chapter": 40,
+    "slug": "040-chapter-40",
+    "title": "Chapter 40",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/040-chapter-40.md"
+  },
+  {
+    "chapter": 41,
+    "slug": "041-chapter-41",
+    "title": "Chapter 41",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/041-chapter-41.md"
+  },
+  {
+    "chapter": 42,
+    "slug": "042-chapter-42",
+    "title": "Chapter 42",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/042-chapter-42.md"
+  },
+  {
+    "chapter": 43,
+    "slug": "043-chapter-43",
+    "title": "Chapter 43",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/043-chapter-43.md"
+  },
+  {
+    "chapter": 44,
+    "slug": "044-chapter-44",
+    "title": "Chapter 44",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/044-chapter-44.md"
+  },
+  {
+    "chapter": 45,
+    "slug": "045-chapter-45",
+    "title": "Chapter 45",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/045-chapter-45.md"
+  },
+  {
+    "chapter": 46,
+    "slug": "046-chapter-46",
+    "title": "Chapter 46",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/046-chapter-46.md"
+  },
+  {
+    "chapter": 47,
+    "slug": "047-chapter-47",
+    "title": "Chapter 47",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/047-chapter-47.md"
+  },
+  {
+    "chapter": 48,
+    "slug": "048-chapter-48",
+    "title": "Chapter 48",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/048-chapter-48.md"
+  },
+  {
+    "chapter": 49,
+    "slug": "049-chapter-49",
+    "title": "Chapter 49",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/049-chapter-49.md"
+  },
+  {
+    "chapter": 50,
+    "slug": "050-chapter-50",
+    "title": "Chapter 50",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/050-chapter-50.md"
+  },
+  {
+    "chapter": 51,
+    "slug": "051-chapter-51",
+    "title": "Chapter 51",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/051-chapter-51.md"
+  },
+  {
+    "chapter": 52,
+    "slug": "052-chapter-52",
+    "title": "Chapter 52",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/052-chapter-52.md"
+  },
+  {
+    "chapter": 53,
+    "slug": "053-chapter-53",
+    "title": "Chapter 53",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/053-chapter-53.md"
+  },
+  {
+    "chapter": 54,
+    "slug": "054-chapter-54",
+    "title": "Chapter 54",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/054-chapter-54.md"
+  },
+  {
+    "chapter": 55,
+    "slug": "055-chapter-55",
+    "title": "Chapter 55",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/055-chapter-55.md"
+  },
+  {
+    "chapter": 56,
+    "slug": "056-chapter-56",
+    "title": "Chapter 56",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/056-chapter-56.md"
+  },
+  {
+    "chapter": 57,
+    "slug": "057-chapter-57",
+    "title": "Chapter 57",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/057-chapter-57.md"
+  },
+  {
+    "chapter": 58,
+    "slug": "058-chapter-58",
+    "title": "Chapter 58",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/058-chapter-58.md"
+  },
+  {
+    "chapter": 59,
+    "slug": "059-chapter-59",
+    "title": "Chapter 59",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/059-chapter-59.md"
+  },
+  {
+    "chapter": 60,
+    "slug": "060-chapter-60",
+    "title": "Chapter 60",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/060-chapter-60.md"
+  },
+  {
+    "chapter": 61,
+    "slug": "061-chapter-61",
+    "title": "Chapter 61",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/061-chapter-61.md"
+  },
+  {
+    "chapter": 62,
+    "slug": "062-chapter-62",
+    "title": "Chapter 62",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/062-chapter-62.md"
+  },
+  {
+    "chapter": 63,
+    "slug": "063-chapter-63",
+    "title": "Chapter 63",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/063-chapter-63.md"
+  },
+  {
+    "chapter": 64,
+    "slug": "064-chapter-64",
+    "title": "Chapter 64",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/064-chapter-64.md"
+  },
+  {
+    "chapter": 65,
+    "slug": "065-chapter-65",
+    "title": "Chapter 65",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/065-chapter-65.md"
+  },
+  {
+    "chapter": 66,
+    "slug": "066-chapter-66",
+    "title": "Chapter 66",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/066-chapter-66.md"
+  },
+  {
+    "chapter": 67,
+    "slug": "067-chapter-67",
+    "title": "Chapter 67",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/067-chapter-67.md"
+  },
+  {
+    "chapter": 68,
+    "slug": "068-chapter-68",
+    "title": "Chapter 68",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/068-chapter-68.md"
+  },
+  {
+    "chapter": 69,
+    "slug": "069-chapter-69",
+    "title": "Chapter 69",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/069-chapter-69.md"
+  },
+  {
+    "chapter": 70,
+    "slug": "070-chapter-70",
+    "title": "Chapter 70",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/070-chapter-70.md"
+  },
+  {
+    "chapter": 71,
+    "slug": "071-chapter-71",
+    "title": "Chapter 71",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/071-chapter-71.md"
+  },
+  {
+    "chapter": 72,
+    "slug": "072-chapter-72",
+    "title": "Chapter 72",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/072-chapter-72.md"
+  },
+  {
+    "chapter": 73,
+    "slug": "073-chapter-73",
+    "title": "Chapter 73",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/073-chapter-73.md"
+  },
+  {
+    "chapter": 74,
+    "slug": "074-chapter-74",
+    "title": "Chapter 74",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/074-chapter-74.md"
+  },
+  {
+    "chapter": 75,
+    "slug": "075-chapter-75",
+    "title": "Chapter 75",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/075-chapter-75.md"
+  },
+  {
+    "chapter": 76,
+    "slug": "076-chapter-76",
+    "title": "Chapter 76",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/076-chapter-76.md"
+  },
+  {
+    "chapter": 77,
+    "slug": "077-chapter-77",
+    "title": "Chapter 77",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/077-chapter-77.md"
+  },
+  {
+    "chapter": 78,
+    "slug": "078-chapter-78",
+    "title": "Chapter 78",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/078-chapter-78.md"
+  },
+  {
+    "chapter": 79,
+    "slug": "079-chapter-79",
+    "title": "Chapter 79",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/079-chapter-79.md"
+  },
+  {
+    "chapter": 80,
+    "slug": "080-chapter-80",
+    "title": "Chapter 80",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/080-chapter-80.md"
+  },
+  {
+    "chapter": 81,
+    "slug": "081-chapter-81",
+    "title": "Chapter 81",
+    "translator": "James Legge",
+    "source": "MIT Internet Classics Archive",
+    "source_url": "https://classics.mit.edu/Lao/taote.2.ii.html",
+    "target": "tao.cleaned/081-chapter-81.md"
+  }
+]

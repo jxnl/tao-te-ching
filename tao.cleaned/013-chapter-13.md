@@ -1,0 +1,13 @@
+---
+title: "Chapter 13"
+chapter_label: "13"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.1.1.html"
+---
+
+1. Favour and disgrace would seem equally to be feared; honour and great calamity, to be regarded as personal conditions (of the same kind).
+
+2. What is meant by speaking thus of favour and disgrace? Disgrace is being in a low position (after the enjoyment of favour). The getting that (favour) leads to the apprehension (of losing it), and the losing it leads to the fear of (still greater calamity):--this is what is meant by saying that favour and disgrace would seem equally to be feared. And what is meant by saying that honour and great calamity are to be (similarly) regarded as personal conditions? What makes me liable to great calamity is my having the body (which I call myself); if I had not the body, what great calamity could come to me?
+
+3. Therefore he who would administer the kingdom, honouring it as he honours his own person, may be employed to govern it, and he who would administer it with the love which he bears to his own person may be entrusted with it.

@@ -1,0 +1,33 @@
+{
+  "name": "tao-te-ching",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "cf:dev": "wrangler pages dev dist",
+    "render:og": "node scripts/render_og_images.mjs",
+    "render:og:preview": "OG_SAMPLE_ONLY=1 node scripts/render_og_images.mjs",
+    "build": "node scripts/render_og_images.mjs && astro build",
+    "preview": "astro preview",
+    "build:github": "node scripts/render_og_images.mjs && DEPLOY_TARGET=github-pages astro build",
+    "build:cloudflare": "node scripts/render_og_images.mjs && DEPLOY_TARGET=cloudflare astro build",
+    "deploy:cloudflare": "node scripts/render_og_images.mjs && DEPLOY_TARGET=cloudflare astro build && wrangler pages deploy dist --project-name=tao-te-ching",
+    "d1:migrate:local": "wrangler d1 migrations apply DB --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "d1:seed:sql": "node scripts/build-d1-seed.mjs"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.6.0",
+    "lucide": "^1.8.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^25.5.0",
+    "playwright": "^1.59.1",
+    "wrangler": "^4.81.1"
+  },
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+}

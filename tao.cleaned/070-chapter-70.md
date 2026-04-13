@@ -1,0 +1,13 @@
+---
+title: "Chapter 70"
+chapter_label: "70"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. My words are very easy to know, and very easy to practise; but there is no one in the world who is able to know and able to practise them.
+
+2. There is an originating and all-comprehending (principle) in my words, and an authoritative law for the things (which I enforce). It is because they do not know these, that men do not know me.
+
+3. They who know me are few, and I am on that account (the more) to be prized. It is thus that the sage wears (a poor garb of) hair cloth, while he carries his (signet of) jade in his bosom.

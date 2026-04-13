@@ -1,0 +1,15 @@
+---
+title: "Chapter 50"
+chapter_label: "50"
+translator: "James Legge"
+source: "MIT Internet Classics Archive"
+source_url: "https://classics.mit.edu/Lao/taote.2.ii.html"
+---
+
+1. Men come forth and live; they enter (again) and die.
+
+2. Of every ten three are ministers of life (to themselves); and three are ministers of death.
+
+3. There are also three in every ten whose aim is to live, but whose movements tend to the land (or place) of death. And for what reason? Because of their excessive endeavours to perpetuate life.
+
+4. But I have heard that he who is skilful in managing the life entrusted to him for a time travels on the land without having to shun rhinoceros or tiger, and enters a host without having to avoid buff coat or sharp weapon. The rhinoceros finds no place in him into which to thrust its horn, nor the tiger a place in which to fix its claws, nor the weapon a place to admit its point. And for what reason? Because there is in him no place of death.
