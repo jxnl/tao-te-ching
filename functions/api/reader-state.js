@@ -2,6 +2,7 @@ import {
   enforceRateLimit,
   getClientIp,
   getReaderState,
+  getVisitorHash,
   hashValue,
   json,
   normalizeSlug,
@@ -22,7 +23,8 @@ export async function onRequestGet(context) {
     return json({ error: "Rate limit exceeded." }, { status: 429 })
   }
 
-  const state = await getReaderState(context.env.DB, slug)
+  const visitorHash = await getVisitorHash(context.request, context.env.RATE_LIMIT_SALT)
+  const state = await getReaderState(context.env.DB, slug, visitorHash)
   if (!state) {
     return json({ error: "Chapter not found in D1." }, { status: 404 })
   }

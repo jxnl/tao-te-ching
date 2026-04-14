@@ -89,6 +89,32 @@
     fill: currentColor;
   }
 
+  .reader-comment-delete {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    color: rgba(130, 130, 130, 0.78);
+    cursor: pointer;
+    transition: color 140ms ease-out;
+  }
+
+  .reader-comment-delete:hover,
+  .reader-comment-delete:focus-visible {
+    color: rgba(30, 30, 30, 0.96);
+    outline: none;
+  }
+
+  .reader-comment-delete:disabled {
+    opacity: 0.48;
+    cursor: wait;
+  }
+
   .book-highlight {
     background-color: rgba(190, 190, 190, 0.42);
     color: inherit;

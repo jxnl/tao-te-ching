@@ -14,6 +14,7 @@ type HighlightRange = {
 type ReaderComment = {
   id: string
   body: string
+  can_delete: boolean
   created_at: number
 }
 
@@ -116,6 +117,7 @@ function isReaderComment(value: unknown): value is ReaderComment {
       typeof value === "object" &&
       typeof (value as ReaderComment).id === "string" &&
       typeof (value as ReaderComment).body === "string" &&
+      typeof (value as ReaderComment).can_delete === "boolean" &&
       isFiniteNumber((value as ReaderComment).created_at),
   )
 }
@@ -387,16 +389,21 @@ function getStoredHighlightRanges(slug: string) {
   }
 }
 
+function rangesConflict(start: number, end: number, range: HighlightRange) {
+  return start < range.end && end > range.start
+}
+
 function saveHighlightRange(slug: string, start: number, end: number) {
   const highlights = getStoredHighlightRanges(slug)
-  if (highlights.some((item) => item.start === start && item.end === end)) {
-    return
-  }
+  const conflicts = highlights.filter((item) => rangesConflict(start, end, item))
+  const nextHighlights = highlights.filter((item) => !rangesConflict(start, end, item))
+  const hasExactMatch = conflicts.some((item) => item.start === start && item.end === end)
 
-  highlights.push({ start, end })
   localStorage.setItem(
     `tao-te-ching-highlights:${slug}`,
-    JSON.stringify(highlights),
+    JSON.stringify(
+      hasExactMatch ? nextHighlights : [...nextHighlights, { start, end }],
+    ),
   )
 }
 
@@ -568,6 +575,7 @@ function getReaderStateSignature(state: ReaderState) {
     comments: state.comments.map((comment) => [
       comment.id,
       comment.body,
+      comment.can_delete,
       comment.created_at,
     ]),
     related: state.related.map((item) => [
@@ -714,15 +722,31 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
     const entry = document.createElement("li")
     entry.className = `${MARGIN_ITEM_CLASS} border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0`
 
+    const header = document.createElement("div")
+    header.className = "flex items-start justify-between gap-3"
+
     const body = document.createElement("p")
-    body.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
+    body.className = "m-0 min-w-0 flex-1 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
     body.textContent = comment.body
+
+    header.append(body)
+
+    if (comment.can_delete) {
+      const remove = document.createElement("button")
+      remove.type = "button"
+      remove.className = "reader-comment-delete"
+      remove.dataset.commentDelete = "true"
+      remove.dataset.commentId = comment.id
+      remove.setAttribute("aria-label", "Delete note")
+      remove.innerHTML = renderIcon(icons.trash, "h-[0.82rem] w-[0.82rem] stroke-[1.8]")
+      header.append(remove)
+    }
 
     const meta = document.createElement("p")
     meta.className = "mt-[0.3rem] text-[0.78rem] tracking-[0.01em] text-[rgba(78,78,78,0.82)]"
     meta.textContent = formatCommentDate(comment.created_at)
 
-    entry.append(body, meta)
+    entry.append(header, meta)
     applyMarginaliaEntry(entry, container.children.length, 92)
     container.append(entry)
   }
@@ -1028,6 +1052,41 @@ export function setupReaderPage(signal: AbortSignal) {
         }
       } finally {
         commentInput.disabled = false
+      }
+    },
+    { signal },
+  )
+
+  commentList?.addEventListener(
+    "click",
+    async (event) => {
+      if (isNavigating) return
+
+      const target = event.target
+      if (!(target instanceof Element)) return
+
+      const deleteButton = target.closest<HTMLButtonElement>("[data-comment-delete]")
+      if (!deleteButton || deleteButton.disabled) return
+
+      event.preventDefault()
+      const commentId = deleteButton.dataset.commentId
+      if (!commentId) return
+
+      deleteButton.disabled = true
+      setText(commentStatus, "Deleting...")
+
+      try {
+        await fetchJson(`${BASE_URL}api/comments?id=${encodeURIComponent(commentId)}`, {
+          method: "DELETE",
+          signal,
+        })
+        setText(commentStatus, "Deleted.")
+        await refreshReaderState()
+      } catch {
+        if (!signal.aborted) {
+          deleteButton.disabled = false
+          setText(commentStatus, "Could not delete note. Refresh and try again.")
+        }
       }
     },
     { signal },

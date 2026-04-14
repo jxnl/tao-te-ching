@@ -1,4 +1,4 @@
-import { Bookmark, MessageSquareText, Search, Star, X } from "lucide"
+import { Bookmark, MessageSquareText, Search, Star, Trash2, X } from "lucide"
 
 type IconNode = Array<[string, Record<string, string>]>
 
@@ -50,5 +50,6 @@ export const icons = {
   highlight: Bookmark as IconNode,
   search: Search as IconNode,
   note: MessageSquareText as IconNode,
+  trash: Trash2 as IconNode,
   close: X as IconNode,
 }
