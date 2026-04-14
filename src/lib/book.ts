@@ -162,7 +162,7 @@ export function getFragmentEntry(slug: string): FragmentEntry {
 
   const fileName = `${slug}.md`
   const filePath = path.join(BOOK_DIR, fileName)
-  const markdown = readFileSync(filePath, "utf-8")
+  const markdown = readFileSync(filePath, "utf-8").replace(/\r\n?/g, "\n")
   const { data, body } = parseFrontMatter(markdown)
   const title = data.title || slug
   const canonicalOrder = getChapterSlugs().indexOf(slug)

@@ -82,7 +82,7 @@ const statements = [
 
 files.forEach((fileName, index) => {
   const slug = fileName.replace(/\.md$/, "")
-  const markdown = readFileSync(path.join(BOOK_DIR, fileName), "utf-8")
+  const markdown = readFileSync(path.join(BOOK_DIR, fileName), "utf-8").replace(/\r\n?/g, "\n")
   const { data, body } = parseFrontMatter(markdown)
   const title = data.title || slug
   const chapterLabel = data.chapter_label || data.fragment_number || slug
