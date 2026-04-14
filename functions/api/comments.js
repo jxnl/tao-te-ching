@@ -5,6 +5,7 @@ import {
   getComments,
   getFragment,
   getOrCreateAnonId,
+  getVisitorHash,
   hashValue,
   json,
   normalizeSlug,
@@ -25,9 +26,10 @@ export async function onRequestGet(context) {
     return json({ error: "Rate limit exceeded." }, { status: 429 })
   }
 
+  const visitorHash = await getVisitorHash(context.request, context.env.RATE_LIMIT_SALT)
   return json({
     slug,
-    comments: await getComments(context.env.DB, slug),
+    comments: await getComments(context.env.DB, slug, 24, visitorHash),
   })
 }
 
@@ -59,6 +61,7 @@ export async function onRequestPost(context) {
     getClientIp(context.request),
     context.env.RATE_LIMIT_SALT,
   )
+  const visitorHash = await getVisitorHash(context.request, context.env.RATE_LIMIT_SALT)
   const allowed = await enforceRateLimit(context.env.DB, `comment:${ipHash}`, 4, 600)
   if (!allowed) {
     return json({ error: "Rate limit exceeded." }, { status: 429 })
@@ -69,10 +72,10 @@ export async function onRequestPost(context) {
   await context.env.DB
     .prepare(
       `INSERT INTO comments
-        (id, slug, start_offset, end_offset, body, anon_id, ip_hash, created_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+        (id, slug, start_offset, end_offset, body, anon_id, ip_hash, visitor_hash, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     )
-    .bind(id, slug, startOffset, endOffset, content, anonId, ipHash, createdAt)
+    .bind(id, slug, startOffset, endOffset, content, anonId, ipHash, visitorHash, createdAt)
     .run()
 
   const response = json({
@@ -82,9 +85,46 @@ export async function onRequestPost(context) {
       body: content,
       start_offset: startOffset,
       end_offset: endOffset,
+      can_delete: true,
       created_at: createdAt,
     },
   })
   response.headers.append("Set-Cookie", anonCookie(anonId))
   return response
+}
+
+export async function onRequestDelete(context) {
+  const url = new URL(context.request.url)
+  const id = String(url.searchParams.get("id") || "").trim()
+  if (!/^[0-9a-f-]{36}$/i.test(id)) {
+    return json({ error: "Missing or invalid comment id." }, { status: 400 })
+  }
+
+  const ipHash = await hashValue(
+    getClientIp(context.request),
+    context.env.RATE_LIMIT_SALT,
+  )
+  const allowed = await enforceRateLimit(context.env.DB, `comment-delete:${ipHash}`, 20, 60)
+  if (!allowed) {
+    return json({ error: "Rate limit exceeded." }, { status: 429 })
+  }
+
+  const visitorHash = await getVisitorHash(context.request, context.env.RATE_LIMIT_SALT)
+  const deleted = await context.env.DB
+    .prepare(
+      `UPDATE comments
+       SET status = 'hidden'
+       WHERE id = ?
+         AND visitor_hash = ?
+         AND status = 'visible'
+       RETURNING id`,
+    )
+    .bind(id, visitorHash)
+    .first()
+
+  if (!deleted) {
+    return json({ error: "Comment not found." }, { status: 404 })
+  }
+
+  return json({ ok: true, id })
 }

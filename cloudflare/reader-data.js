@@ -206,16 +206,17 @@ export async function getPageCounts(db, slug) {
   }
 }
 
-export async function getComments(db, slug, limit = 24) {
+export async function getComments(db, slug, limit = 24, visitorHash = "") {
   const result = await db
     .prepare(
-      `SELECT id, body, start_offset, end_offset, created_at
-       FROM comments
-       WHERE slug = ? AND status = 'visible'
-       ORDER BY created_at DESC
-       LIMIT ?`,
+      `SELECT id, body, start_offset, end_offset, created_at,
+              CASE WHEN visitor_hash = ? THEN 1 ELSE 0 END AS can_delete
+        FROM comments
+        WHERE slug = ? AND status = 'visible'
+        ORDER BY created_at DESC
+        LIMIT ?`,
     )
-    .bind(slug, limit)
+    .bind(visitorHash, slug, limit)
     .all()
 
   return result.results || []
@@ -249,13 +250,13 @@ export async function getRelatedFragments(db, slug, limit = 3) {
   return (result.results || []).filter((entry) => Number(entry.score || 0) > 0)
 }
 
-export async function getReaderState(db, slug) {
+export async function getReaderState(db, slug, visitorHash = "") {
   const fragment = await getFragment(db, slug)
   if (!fragment) return null
 
   const [{ highlightCount, commentCount, starCount }, comments, related] = await Promise.all([
     getPageCounts(db, slug),
-    getComments(db, slug),
+    getComments(db, slug, 24, visitorHash),
     getRelatedFragments(db, slug),
   ])
 

@@ -43,22 +43,49 @@ export async function onRequestPost(context) {
     return json({ error: "Rate limit exceeded." }, { status: 429 })
   }
 
-  await context.env.DB
+  const existing = await context.env.DB
     .prepare(
-      `INSERT INTO highlights
-        (id, slug, start_offset, end_offset, anon_id, ip_hash, created_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      `SELECT id, start_offset, end_offset
+       FROM highlights
+       WHERE slug = ?
+         AND anon_id = ?
+         AND start_offset < ?
+         AND end_offset > ?`,
     )
-    .bind(
-      crypto.randomUUID(),
-      slug,
-      startOffset,
-      endOffset,
-      anonId,
-      ipHash,
-      Date.now(),
-    )
-    .run()
+    .bind(slug, anonId, endOffset, startOffset)
+    .all()
+
+  const matchingHighlights = existing.results || []
+  const hasExactMatch = matchingHighlights.some((row) =>
+    Number(row.start_offset) === startOffset && Number(row.end_offset) === endOffset
+  )
+
+  if (matchingHighlights.length > 0) {
+    const deletePlaceholders = matchingHighlights.map(() => "?").join(", ")
+    await context.env.DB
+      .prepare(`DELETE FROM highlights WHERE id IN (${deletePlaceholders})`)
+      .bind(...matchingHighlights.map((row) => row.id))
+      .run()
+  }
+
+  if (!hasExactMatch) {
+    await context.env.DB
+      .prepare(
+        `INSERT INTO highlights
+          (id, slug, start_offset, end_offset, anon_id, ip_hash, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      )
+      .bind(
+        crypto.randomUUID(),
+        slug,
+        startOffset,
+        endOffset,
+        anonId,
+        ipHash,
+        Date.now(),
+      )
+      .run()
+  }
 
   const counts = await getPageCounts(context.env.DB, slug)
   const response = json({
